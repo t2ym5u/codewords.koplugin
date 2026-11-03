@@ -31,6 +31,7 @@ local T               = require("ffi/util").template
 
 local MenuHelper = require("menu_helper")
 local ScreenBase = require("screen_base")
+local SeenHistory = require("seen_history")
 local Board      = lrequire("board")
 local CodeGrid   = lrequire("grid")
 
@@ -319,8 +320,14 @@ function CodeWordsScreen:openPacksMenu()
     }
 end
 
+-- Words already dealt, per language (game-common seen_history.lua): a new
+-- grid takes words not seen yet, so they only come back once the selected
+-- packs have all been dealt. Above every language's word count.
+local SEEN_MAX = 3000
+
 function CodeWordsScreen:_newBoard()
-    self.board   = Board.new(self:_words(self.packs))
+    local seen = SeenHistory.open(self.plugin, "words_" .. self.lang, { max = SEEN_MAX })
+    self.board   = Board.new(Board.dealWords(self:_words(self.packs), seen))
     collectgarbage()
     self.message = nil
     self.phase   = "play"

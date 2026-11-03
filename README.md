@@ -45,6 +45,9 @@ notch in the corner marks the cards already revealed.
 
 - 5×5 grid sized to the screen; long words shrink, names with a space or a
   hyphen go on two lines.
+- Fresh words on every grid: the words already dealt are remembered, and a
+  word only comes back once every word of the selected packs has been on a
+  grid (about 70 grids with all packs).
 - Word packs, picked in the menu (**Packs: all** or any mix); each grid draws
   from the selected packs only, and each pack is a file loaded only when a grid
   is dealt. Common nouns mixed with famous names and places (Napoléon,
