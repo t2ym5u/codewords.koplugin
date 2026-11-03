@@ -8,7 +8,7 @@ return {
     "Chaplin", "Piaf", "Brassens", "Gainsbourg", "Jules Verne", "Dumas", "Proust", "Toutankhamon",
     "Archimède", "Socrate", "Platon", "Homère", "Marco Polo", "Magellan", "Armstrong", "Gagarine",
     "Cousteau", "Eiffel", "Mandela", "Freud", "Houdini", "Tesla", "Bach", "Chopin",
-    "Debussy", "Ravel", "Cézanne", "Renoir", "Méliès", "Coco Chanel", "Dior", "Henri IV",
+    "Debussy", "Ravel", "Cézanne", "Renoir", "Méliès", "Champollion", "Vauban", "Henri IV",
     "François Ier", "Louis XVI", "Saint Louis", "Richelieu", "Mazarin", "Colbert", "Danton", "La Fayette",
     "Joséphine", "Bonaparte", "Aliénor", "Du Guesclin", "Bayard", "Duguay-Trouin", "Surcouf", "Cartier",
     "Champlain", "La Pérouse", "Bougainville", "Blériot", "Lindbergh", "Mermoz", "Saint-Ex", "Lumière",

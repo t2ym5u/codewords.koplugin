@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0] - 2026-11-03
+
+### Changed
+- Fresh words on every grid: the game remembers the words already dealt, per
+  language, and a new grid takes words not seen yet; a word only comes back
+  once every word of the selected packs has been on a grid (about 70 grids
+  with all packs).
+- French "History & people" pack: Coco Chanel and Dior, better known as
+  fashion brands, replaced by Champollion and Vauban.
+
 ## [1.0.2] - 2026-11-02
 
 ### Changed

@@ -25,6 +25,22 @@ local function other(team)
 end
 Board.other = other
 
+-- The 25 words of a new grid, drawn from `words` (the selected packs, which
+-- may repeat a word) through `seen`, a game-common SeenHistory: words not on
+-- an earlier grid first, so a word only comes back once the whole pool has
+-- been dealt. Without `seen`, all of `words` (Board.new picks at random).
+function Board.dealWords(words, seen, rng)
+    if not seen then return words end
+    local pool, dup = {}, {}
+    for _i, w in ipairs(words) do
+        if not dup[w] then
+            dup[w] = true
+            pool[#pool + 1] = w
+        end
+    end
+    return seen:draw(pool, Board.SIZE, rng)
+end
+
 -- opts.rng(n) -> integer in 1..n (defaults to math.random)
 -- opts.first  -> "red" | "blue" (random when nil)
 function Board.new(words, opts)
