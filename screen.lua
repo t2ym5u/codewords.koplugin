@@ -213,8 +213,7 @@ local function winTitle(team)
 end
 
 function CodeWordsScreen:init()
-    local default_lang = _.lang() == "fr" and "fr" or "en"
-    self.lang  = self.plugin:getSetting("lang", default_lang)
+    self.lang  = self.plugin:getLang({ "fr", "en" })
     self.wins  = self.plugin:getSetting("wins", { red = 0, blue = 0 })
     self.packs = self:_loadPackSelection()
     self.phase = "play"
@@ -461,7 +460,7 @@ function CodeWordsScreen:openLangMenu()
         on_select  = function(lang)
             if lang == self.lang then return end
             self.lang = lang
-            self.plugin:saveSetting("lang", lang)
+            self.plugin:setLang(lang)
             -- The words on the grid are the old language's: deal a new grid.
             self:onNewGame()
         end,
