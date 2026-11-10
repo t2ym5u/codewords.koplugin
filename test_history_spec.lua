@@ -30,7 +30,7 @@ local function fakePlugin(store)
 end
 
 local function deal(plugin, lang, words)
-    local seen = SeenHistory.open(plugin, "words_" .. lang, { max = 3000 })
+    local seen = SeenHistory.open(plugin, "words_" .. lang, { max = 5000 })  -- screen.lua SEEN_MAX
     return Board.new(Board.dealWords(words, seen))
 end
 

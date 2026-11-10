@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0] - 2026-11-10
+
+### Added
+- Twice as many French words in every pack: Classic 881 (was 440), Food
+  501 (240), Geography 554 (272), History 527 (263), Kids 481 (240), Pop
+  culture 512 (240), Science 499 (240). The game remembers the last 5,000
+  words it dealt (was 3,000), so they all come up before any repeats.
+
 ## [1.1.3] - 2026-11-09
 
 ### Fixed

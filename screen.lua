@@ -322,7 +322,7 @@ end
 -- Words already dealt, per language (game-common seen_history.lua): a new
 -- grid takes words not seen yet, so they only come back once the selected
 -- packs have all been dealt. Above every language's word count.
-local SEEN_MAX = 3000
+local SEEN_MAX = 5000
 
 function CodeWordsScreen:_newBoard()
     local seen = SeenHistory.open(self.plugin, "words_" .. self.lang, { max = SEEN_MAX })
