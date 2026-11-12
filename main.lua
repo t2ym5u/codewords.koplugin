@@ -49,9 +49,15 @@ local CodeWords = PluginBase:extend{
     name      = "codewords",
     menu_text = _("Code Words"),
     menu_hint = "tools",
+    -- Double Agents: two players with a reader each (duo_screen.lua).
+    duo_mode      = true,
+    duo_menu_text = _("Double Agents"),
 }
 
 function CodeWords:createScreen()
+    if self.launch_mode == "duo" then
+        return lazyrequire("duo_screen"):new{ plugin = self }
+    end
     return lazyrequire("screen"):new{ plugin = self }
 end
 

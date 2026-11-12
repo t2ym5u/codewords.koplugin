@@ -69,6 +69,24 @@ notch in the corner marks the cards already revealed.
 - The game in progress is saved when the screen closes; a finished game comes
   back with **New game** in the action bar.
 
+## Double Agents (two readers)
+
+**Double Agents** (FR *Agents doubles*) is a cooperative mode for two players
+with a reader each, under **Tools → Games → Two readers**.
+
+- One player starts a game and reads its five-digit code aloud; the other
+  joins with it. The code carries the language of the words and the number
+  of turns, so both readers deal the same 25 words.
+- Each reader shows its own player's key: 9 agents (black cards) and 3
+  assassins (crossed out). The keys overlap: 15 agents to find in all.
+- Players take turns giving a clue for the agents of their own key. Both tap
+  the guessed word on their reader (twice, to confirm), so the readers stay
+  in step; the guess is judged on the clue giver's key: an agent is found, a
+  bystander ends the turn, an assassin loses the game.
+- Find all 15 agents within 11 (relaxed) or 9 (standard) turns. A corner
+  triangle marks a word the other player's key calls a bystander; Undo takes
+  back the last entry on both readers.
+
 ## Installation
 
 Copy `codewords.koplugin/` into KOReader's `plugins/` folder, with the shared

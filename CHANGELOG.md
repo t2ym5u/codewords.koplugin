@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.3.0] - 2026-11-10
+
+### Added
+- Double Agents (FR Agents doubles), a mode for two players with a reader
+  each, listed under Tools → Games → Two readers. Both readers deal the
+  same 25 words from a five-digit game code; each shows only its own
+  player's key (9 agents, 3 assassins; 15 agents in all, the keys overlap).
+  Give clues in turn, guess on both readers, and find every agent within 11
+  or 9 turns. Needs game-common 1.16.0.
+
 ## [1.2.0] - 2026-11-10
 
 ### Added
